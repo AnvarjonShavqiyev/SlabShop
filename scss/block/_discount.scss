@@ -1,0 +1,46 @@
+.first__banner{
+    display: flex;
+    gap: 24px;
+}
+
+.pages{
+    margin-top: 18px;
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+    .pages__num{
+        display: flex;
+        gap: 4px;
+        .num__shape{
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #828282;  
+        }
+        .active{
+            width: 24px;
+            height: 7px;
+            border-radius: 6px;
+            background-color: #52057B;
+        }
+    }
+    .pages__btn{
+        display: flex;
+        gap: 16px;
+        button{
+            color: #828282;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            @include font($f-size:14px,$f-color:#828282);
+            border: none;
+            background-color: #52057b00;
+        }
+        .active{
+            color: #52057B;  
+        }
+    }
+}
+.second__banner{
+    margin-bottom: 40px;
+}

@@ -1,0 +1,150 @@
+.head__nav{
+    width: 100%;
+    background-color: #212121;
+    .nav1{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .first__menu{
+            list-style: none;
+            display: flex;
+            gap: 16px;
+            .first__item{
+                a{
+                    text-decoration: none;
+                    @include font();
+                }
+            }
+        }
+        .second__menu{
+            display: flex;
+            gap: 16px;  
+            .second__item{
+                a{
+                    text-decoration: none;
+                    @include font();
+                }
+                select{
+                    border: none;
+                    background-color: #212121;
+                    @include font();
+                }
+                .download{
+                    width: 80px;
+                }
+                .language{
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .location{
+        display: flex;
+        gap: 2px;
+        select{
+            border: none;
+            background-color: #fff;
+            width: 155px;
+            @include font($f-color:#212121);
+        }
+    }
+    .search__wrapper{
+        display: flex;
+        gap: 25px;
+    }
+    .search{
+        height: 38px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .search__inp{
+            width: 548px;
+            height: 38px;
+            border: 1px solid #E2E2E2;
+            border-radius: 6px;
+            padding: 8px 16px;
+        }
+        .search__inp::placeholder{
+            @include font($f-color:#828282,$f-size:14px)
+        }
+        .search__btn{
+            border: none;
+            background-color: #fff;
+            width: 22px;
+            height: 22px;
+            margin-left: -50px;
+        }
+    }   
+    .category{
+        width: 102px;
+        @include a_button();
+        @include font();
+    }
+    .head__icons{
+        display: flex;
+        gap: 24px;
+        .user{
+            display: flex;
+            gap: 10px;
+            .user__name{
+                @include font($f-family:'InterMedium',$f-weight:500,$f-color:#212121);
+            }
+            .user__status{
+                @include font($f-color:#129A00);
+            }
+        }
+    }
+
+}
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+}
+.deep__nav{
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    .deep__wrapper{
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+        .deep__menu{
+            display: flex;
+            .deep__text{
+                display: flex;
+                @include font($f-color:#31353B);
+                .nuqta{
+                    margin-left: 8px;
+                    margin-right: 8px;
+                }
+            }
+            .deep__list{
+                display: flex;
+                list-style-type: none;
+                gap: 16px;
+                .deep__item{
+                    a{
+                        text-decoration: none;
+                        @include font($f-color:#31353B)
+                    }
+                }
+            }
+        }
+        select{
+            border: none;
+            background-color: #fff;
+            @include font($f-color:#31353B)
+        }
+    }
+
+}

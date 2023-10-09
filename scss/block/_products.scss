@@ -1,0 +1,71 @@
+.products__list{
+    max-width: 1360px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5,259px);
+    grid-template-rows: repeat(2,367px);
+    gap: 24px 20px;
+    margin-top: 24px;
+    margin-bottom: 120px;
+    .products__item{
+        border-radius: 8px;
+        border: 1px solid var(--outline, #E2E2E2);
+        background: var(--style, #FFF);
+        .item__back{
+            border-radius: 8px 8px 0px 0px;
+            width: 100%;
+            height: 189px;
+            background-color: #E6E8EC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item__info{
+            padding-left: 16px;
+            padding-right: 16px;
+            .product__type{
+                @include font($f-color:#52057B,$f-family:"Inter",$f-weight:400);
+                padding: 6px 8px;
+                background-color: rgba(82, 5, 123, 0.10);
+                border-radius: 8px;
+                display: inline-block;
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+            .product__name{
+                @include font($f-color: #212121,$f-family:"Inter",$f-weight:500,$f-height:140%,$f-size:16px);
+                width: 227px;
+            }
+            .price__w{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 14px;
+                margin-bottom: 14px;
+                .price{
+                    flex-grow: 1;
+                    @include font($f-color: #212121,$f-family:"Inter",$f-weight:600,$f-size:18px);
+                }
+                .rating{
+                    margin-left: 6px;
+                    @include font($f-color: #212121,$f-family:"Inter",$f-weight:400,$f-size:16px);
+                }
+            }
+            .location{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 5px;
+                }
+                .location__name{
+                    flex-grow: 1;
+                    @include font($f-color: #828282,$f-family:"Inter",$f-weight:400,$f-size:14px);
+                }
+                .sold__number{
+                    @include font($f-color: #828282,$f-family:"Inter",$f-weight:400,$f-size:14px);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,75 @@
+.best-shop__banner{
+    width: 1374px;
+}
+.best-shop__title{
+    @include font($f-color:#212121,$f-size:26px,$f-height:150%,$f-weight:600);
+    margin-top: 56px;
+    margin-bottom: 40px; 
+}
+.best-shop__list{
+    display: flex;
+    gap: 16px;
+    .best-shop__item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        .best-info__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px 24px;
+        }
+        .best-product__logo{
+            position: absolute;
+            bottom: 134px;
+            left: 90px;
+        }
+        .magazine__name{
+            margin-top: 44px;
+            @include font($f-color:#212121,$f-size:16px,$f-height:normal,$f-weight:600);
+        }
+        .verification{
+            display: flex;
+            gap: 2px;
+            align-items: center;
+            // justify-content: center;
+            p{
+                @include font($f-color: #4364F7,$f-size:14px,$f-height:normal,$f-weight:600);
+                margin-top: 8px;
+                margin-bottom: 23px;
+            }
+            img{
+                margin-bottom: 12px;
+            };
+        }
+        .statusProduct{
+            display: flex;
+            gap: 32px;
+            .status__info{
+                position: relative;
+                p{
+                    @include font($f-color: #828282,$f-size:14px,$f-height:normal,$f-weight:400);
+                }
+                strong{
+                    @include font($f-color:#212121,$f-size:14px,$f-height:normal,$f-weight:600);
+                    margin-top: 4px;
+                }
+            }
+            .status__info::after{
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 34px;
+                background-color: #828282;
+                top: 0;
+                right: -16px;
+            }
+            .status__info:last-child::after{
+                display: none;
+            }
+        }
+    }
+}

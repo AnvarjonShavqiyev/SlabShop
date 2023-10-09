@@ -1,0 +1,119 @@
+.flash{
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 486px;
+    margin-bottom: 48px;
+}
+.flash__title{
+    padding-top:40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .flash__text{
+        @include font($f-color:#212121,$f-size:26px,$f-weight:600,$f-height:150%);
+    }
+    .flash__time{
+     
+        display: flex;
+        align-items: center;
+        .time__text{
+            @include font($f-color:#212121);
+            margin-right: 16px;
+        }
+        .time{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            background: #52057B;
+            @include font($f-size:16px)   
+        }
+        .nuqta{
+            margin-left: 8px;
+            margin-right: 8px;
+            @include font($f-color:#212121)
+        }
+    }
+}
+
+.flash__list::-webkit-scrollbar {
+    display: none;
+}
+.flash__list{
+     display: flex;
+     align-items: flex-start;
+     gap: 16px;
+    //  overflow: hidden;
+     overflow-x: scroll;
+     flex-wrap: nowrap;
+     
+     .flash__item{
+        
+        .flash__card{
+            width: 235px;
+            height: 334px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            border-radius: 8px;
+            border: 1px solid #E2E2E2;
+            .img__wrapper{
+                border-radius: 8px 8px 0px 0px;
+                width: 100%;
+                height: 167px;
+                background-color: #E6E8EC;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom:16px; 
+            }
+            .flash__text{
+                width: 209px;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 18px;
+                p{
+                    @include font($f-size:12px,$f-color:rgba(130, 130, 130, 1))
+                }
+                h4{
+                    @include font($f-size:16px,$f-height:140%,$f-weight:500,$f-color:#212121);
+                    width: 200px;
+                    margin-top: 8px;
+                    margin-bottom: 14px;
+                }
+                h3{
+                    @include font($f-size:16px,$f-height:140%,$f-color:#212121);  
+                }
+                strike{
+                    @include font($f-size:16px,$f-color:rgba(130, 130, 130, 1));
+                }
+                .cost__wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .cost{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                }
+                .per{
+                    @include font($f-color:#f00);
+                    border-radius: 4px;
+                    background-color: rgba(255, 0, 0, 0.10);
+                    padding: 4px 6px;
+                    width: 45px;
+                }
+            }
+            .flash__info{
+                display: flex;
+                gap: 16px;
+                .sale__count{
+                    @include font($f-size:12px,$f-color:#828282);
+                }
+            }
+        }
+     }
+ }

@@ -1,0 +1,39 @@
+.easy__wrapper{
+    position: relative;
+    h3{
+        @include font($f-color:#212121,$f-size:26px,$f-height:150%,$f-weight:600);
+    }
+    p{
+        @include font($f-color:#828282,$f-size:14px,$f-height:normal,$f-weight:400);
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    button{
+        display: flex;
+        gap: 8px;
+        padding: 12px 16px;
+        background-color: #52057B;
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        @include font($f-color:#FFF,$f-size:14px,$f-height:normal,$f-weight:400);
+    }
+}
+.easy__wrapper::after{
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 1px;
+    background-color: #E2E2E2;
+    top: -40px;
+    left: 0;
+}
+.easy__wrapper::before{
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 1px;
+    background-color: #E2E2E2;
+    bottom: -40px;
+    left: 0;
+}

@@ -1,0 +1,19 @@
+@mixin font($f-family:'Inter',$f-color: #fff,$f-size:12px,$f-style:normal,$f-weight:400,$f-height:normal){
+    color: $f-color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    line-height: $f-height;
+}
+@mixin a_button($b-padding: 8px 16px,$b-radius:6px){
+    border: none;
+    background-color: #52057B;
+    padding: $b-padding;
+    border-radius: 8px;
+}
+@mixin stick($s-color:#0052D4){
+    width: 4px;
+    height: 46px;
+    background-color: $s-color;
+}

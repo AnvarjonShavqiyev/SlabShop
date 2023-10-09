@@ -1,0 +1,25 @@
+.brands__title{
+    @include font($f-color:#212121,$f-size:26px,$f-height:150%,$f-weight:600);
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+.allBrands__wrapper{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    .brands__list{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .brands__item{
+            a{
+                text-decoration: none;
+                @include font($f-color:#828282,$f-size:14px,$f-height:normal,$f-weight:400);
+            }
+        }
+        .brands__item:first-child{
+            a{
+                @include font($f-color:#212121,$f-size:16px,$f-height:140%,$f-weight:600);
+            }
+        }
+    }
+}

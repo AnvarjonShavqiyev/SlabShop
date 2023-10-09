@@ -1,0 +1,15 @@
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    @include font($f-color:#212121,$f-size:14px,$f-height:normal,$f-weight:400);
+    .FAQ{
+        display: flex;
+        gap: 24px;
+        li a{
+            text-decoration: none;
+            @include font($f-color:#212121,$f-size:14px,$f-height:normal,$f-weight:400);
+        }
+    }
+}

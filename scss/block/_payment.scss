@@ -1,0 +1,30 @@
+.payment__wrapper{
+    margin: 80px 0px;
+    position: relative;
+}
+.payment__title{
+    @include font($f-color:#212121,$f-size:26px,$f-height:150%,$f-weight:600);
+    margin-bottom: 32px;
+}
+.payment__list{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+.payment__wrapper::after{
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 1px;
+    background-color: #E2E2E2;
+    top: -40px;
+    left: 0;
+}
+.payment__wrapper::before{
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 1px;
+    background-color: #E2E2E2;
+    bottom: -40px;
+    left: 0;
+}

@@ -1,0 +1,19 @@
+<svg width="144" height="12" viewBox="0 0 144 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Loading Bar">
+<rect id="Rectangle 5" y="1.5" width="144" height="10" rx="5" fill="#F3F3F3"/>
+<g id="Rectangle 6">
+<rect y="0.5" width="119" height="10" rx="5" fill="url(#paint0_linear_0_320)"/>
+<rect y="0.5" width="119" height="10" rx="5" fill="url(#paint1_linear_0_320)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_320" x1="0" y1="5.5" x2="119" y2="5.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9D50BB"/>
+<stop offset="1" stop-color="#6E48AA"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_320" x1="0" y1="5.5" x2="119" y2="5.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF512F"/>
+<stop offset="1" stop-color="#F09819"/>
+</linearGradient>
+</defs>
+</svg>
